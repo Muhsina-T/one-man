@@ -1,0 +1,84 @@
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <h2 class="text-centre">My Profile</h2>
+
+                <form action="/admin/edit-product/{{product._id}}" enctype="multipart/form-data" method="post">
+                    <div class="form-group">
+                        {{!-- <label for="">Profile Photo</label> --}}
+                        <img src="images/profile-2.jpg" style="width: 15rem; height: auto" id="imgView" class="p-3">
+                        <input type="file" class="form-control" name="image" onchange="viewImage(event)">
+                    </div>
+                    <div class="form-group row">
+                        <label for="" class="col-sm-3 col-form-label">Name</label>
+                        <div class="col-sm-9">
+                            <input type="text" class="form-control" name="name" value="Ayesha">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="" class="col-sm-3 col-form-label">Date of Birth</label>
+                        <div class="col-sm-9">
+                            <input type="text" class="form-control" name="dob" value="12/06/1990">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="" class="col-sm-3 col-form-label">Gender</label>
+                        <div class="col-sm-9">
+                            <input type="text" class="form-control" name="gender" value="Female">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="" class="col-sm-3 col-form-label">Nationality</label>
+                        <div class="col-sm-9">
+                            <input type="text" class="form-control" name="nation" value="American">
+                        </div>
+                    </div>
+
+
+
+                    <div class="form-group row">
+                        <label for="" class="col-sm-3 col-form-label">Name</label>
+                        <div class="col-sm-9">
+                            <input type="text" class="form-control" name="name" value="Ayesha">
+                        </div>
+                    </div>
+                    {{!-- <div class="form-group row">
+                        <label for="" class="col-sm-3 col-form-label">Date of Birth</label>
+                        <div class="col-sm-9">
+                            <input type="text" readonly class="form-control" name="dob" value="12/06/1990">
+                        </div>
+                    </div> --}}
+                    <div class="form-group row">
+                        <label for="" class="col-sm-3 col-form-label">Gender</label>
+                        <div class="col-sm-9">
+                            <input type="text" class="form-control" name="gender" value="Female">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="" class="col-sm-3 col-form-label">Nationality</label>
+                        <div class="col-sm-9">
+                            <input type="text" class="form-control" name="nation" value="American">
+                        </div>
+                    </div>
+
+
+                    <button type="submit" class="btn btn-outline-info d-flex">Update</button>
+
+
+                </form>
+
+
+
+           
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>
+    function viewImage(event) {
+        document.getElementById('imgView').src = URL.createObjectURL(event.target.files[0])
+    }
+</script>

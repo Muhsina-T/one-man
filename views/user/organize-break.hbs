@@ -1,0 +1,205 @@
+<section id="organize-break" style="padding-bottom:70px; background-color:ghostwhite">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h2 style="color:lightslategrey">Organize Break</h2>
+                <hr class="mt-3 mr-0 mb-3 ml-0">
+            </div>
+        </div>
+        <form action="" enctype="multipart/form-data" method="post">
+            <div class="row">
+                {{!-- for break icon --}}
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <label>Add an image or icon as expected the break to be</label>
+                            <img class="card-img-top" src="images/desert camp.jpg" alt="" id="imgView" style="border-radius: 3%;">
+                        </div>
+                        <div class="col-sm-12">
+                            <input type="file" class="form-control" name="image" onchange="viewImage(event)">
+                        </div>
+                    </div>
+                </div>
+                {{!-- For detailed Break information --}}
+                <div class="col-md-8">
+                    <div class="card">
+                        <div class="card-body">
+
+
+                            {{!-- Title --}}
+
+                            <div class="form-group row">
+                                <label for="" class="col-sm-3 col-form-label">Title</label>
+                                <div class="col-sm-9">
+                                    <input type="text" class="form-control" name="name" id="name"
+                                        placeholder="Maximum 30 Characters">
+                                </div>
+                            </div>
+
+                            {{!-- Break Country --}}
+                            <div class="form-group row">
+                                <label for="" class="col-sm-3 col-form-label">Break Country</label>
+                                <div class="col-sm-9">
+                                    <select type="text" class="form-control" name="country" value="">
+                                        <option value="Male">Select</option>
+                                        <option value="Male">United Arab Emirates</option>
+                                    </select>
+                                </div>
+                            </div>
+                            {{!--Break Country End --}}
+
+                            <div class="form-group row">
+                                <label for="" class="col-sm-3 col-form-label"> Break State</label>
+                                <div class="col-sm-9">
+                                    <input type="text" class="form-control" name="state"
+                                        placeholder="Enter Break State">
+                                </div>
+                            </div>
+
+                            <div class="form-group row">
+                                <label for="" class="col-sm-3 col-form-label"> Break City</label>
+                                <div class="col-sm-9">
+                                    <input type="text" class="form-control" name="city" placeholder="Enter Break City">
+                                </div>
+                            </div>
+
+                            {{!-- break period --}}
+                            <div class="form-group row">
+                                <label for="" class="col-sm-3 col-form-label">Estimated Date</label>
+                                <div class="col-sm-4">
+                                    <input type="date" class="form-control" style="height :2.250rem;" name="fromDate"
+                                        id="fromDate" placeholder="From Date">
+
+                                </div>
+                                <label for="" class="col-sm-1 col-form-label">To</label>
+                                <div class="col-sm-4">
+                                    <input type="date" class="form-control" style="height :2.250rem;" name="toDate"
+                                        id="toDate" placeholder="To Date">
+
+                                </div>
+                            </div>
+
+                            {{!-- Accepting members--}}
+                            <div class="form-group row">
+                                <label for="" class="col-sm-3 col-form-label">Accepting Members</label>
+                                <div class="col-sm-9">
+                                    <select type="text" class="form-control" name="height" value="">
+                                        <option value="Select">Select</option>
+                                        <option value="Local Members Only">Local Members Only</option>
+                                        <option value="Local and International Members">Local and International Members
+                                        </option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            {{!-- Accepting male / female--}}
+                            <div class="form-group row">
+                                <label for="" class="col-sm-3 col-form-label">Accepting Genders</label>
+                                <div class="col-sm-9">
+                                    <select type="text" class="form-control" name="height" value="">
+                                        <option value="Male and Female">Both Male and Female</option>
+                                        <option value="Male">Male Only</option>
+                                        <option value="Female">Female Only</option>
+                                    </select>
+                                </div>
+                            </div>
+                            {{!-- Accepting Age --}}
+                            <div class="form-group row">
+                                <label for="" class="col-sm-3 col-form-label">Accepting Age</label>
+                                <div class="col-sm-4">
+                                    <input type="number" class="form-control" name="ageFrom" placeholder="From">
+                                </div>
+                                <label for="" class="col-sm-1 col-form-label">To</label>
+                                <div class="col-sm-4">
+                                    <input type="number" class="form-control" name="ageTo" placeholder="To">
+                                </div>
+                            </div>
+                            {{!-- Attandees --}}
+
+                            <div class="form-group row">
+                                <label for="" class="col-sm-3 col-form-label">Estimated No. of Attendees</label>
+                                <div class="col-sm-9">
+                                    <select type="text" class="form-control" name="height" value="">
+                                        <option value="Select">Select</option>
+                                        <option value="1-5">1-5 Mmebers</option>
+                                        <option value="5-10">5-10 Members</option>
+                                        <option value="10-15">10-15 Members</option>
+                                        <option value="15+">15+ Members</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            {{!--Break Expenses --}}
+
+                            <div class="form-group row">
+                                <label for="" class="col-sm-3 col-form-label">Break Expenses</label>
+                                <div class="col-sm-9">
+                                    <select type="text" class="form-control" name="height" value="">
+                                        <option value="Select">Select</option>
+                                        <option value="a">I am covering all expenses (including flights & accommodation
+                                            if required)</option>
+                                        <option value="b">I am covering some expenses (details to be discussed)</option>
+                                        <option value="c">Expenses shared among all attendees</option>
+
+                                    </select>
+                                </div>
+                            </div>
+                            {{!-- Checkbox verified members only --}}
+                            <div class="form-group row">
+                                <label for="" class="col-sm-3 col-form-label"></label>
+                                <div class="col-sm-9">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            Verified Attendees Only
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            {{!-- Accept join request --}}
+                            <div class="form-group row">
+                                <label for="" class="col-sm-3 col-form-label"></label>
+                                <div class="col-sm-9">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            Accept Join Requests from above Criteria Only
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            {{!-- Details & Itinerary --}}
+                            <div class="form-group row">
+                                <label for="" class="col-sm-3 col-form-label">Details & Itinerary</label>
+                                <div class="col-sm-9">
+                                    <textarea class="form-control" rows="3" name="details"
+                                        placeholder="Maximum 500 characters"></textarea>
+                                </div>
+                            </div>
+
+
+
+                            <div class="" style="text-align:center">
+                                <button type="submit" class="btn btn-outline-primary">Submit</button>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</section>
+
+
+<script>
+
+    //for images
+    function viewImage(event) {
+        document.getElementById('imgView').src = URL.createObjectURL(event.target.files[0])
+    }
+
+    </script>
+    
