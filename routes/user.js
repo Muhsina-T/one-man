@@ -99,6 +99,10 @@ router.get('/profile', function (req, res) {
   res.render('user/profile')
 })
 
+router.get('/jeep', function (req, res) {
+  res.render('user/jeep')
+})
+
 router.get('/notifications', function (req, res) {
   res.render('user/notifications')
 })
@@ -178,6 +182,7 @@ router.get('/break-requests', function (req, res) {
 router.get('/driver', function (req, res) {
   res.render('user/driver')
 })
+
 
 
 
