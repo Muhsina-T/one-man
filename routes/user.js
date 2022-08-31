@@ -115,6 +115,9 @@ router.get('/add-profile', function (req, res) {
   res.render('user/add-profile')
 })
 
+router.get('/add-person', function (req, res) {
+  res.render('user/add-person')
+})
 router.get('/edit-profile', function (req, res) {
   res.render('user/edit-profile')
 })
