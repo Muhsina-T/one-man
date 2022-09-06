@@ -582,6 +582,11 @@ h6 {font-size: .9rem; }
 #members .card {
   border: 0;
 }
+#members .members p {
+  text-align: center;
+  
+
+}
 
 
 /* #blog */
@@ -692,9 +697,9 @@ body {
   cursor: pointer;
   box-shadow: 0 1px 3px 1px #aaa;
   border: 0;
-  height:10rem
-  
+  height:10rem;
 }
+
 
 #driver .card img{
   height: 10rem;
@@ -707,3 +712,6 @@ body {
   padding: 0;
   margin: 0;
 }
+#
+
+

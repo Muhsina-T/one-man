@@ -1,32 +1,24 @@
 <section id="add-profile" style="padding-bottom:70px; background-color:ghostwhite">
     <div class="container">
         <div class="row">
-                <div class="col-md-12">
-                    {{!-- Heading--}}
-                    {{!-- <h1 style="text-decoration:none">Add Profile</h1> --}}
-                    <input type="text" style="width:100%; height:40px; font-size:30px;padding:0 ;text-align:center"
-                        class="form-control" name="name" value="Add Profile" disabled>
+            <div class="col-md-12">
+                {{!-- Heading--}}
+                {{!-- <h1 style="text-decoration:none">Add Profile</h1> --}}
+                <input type="text" style="width:100%; height:40px; font-size:30px;padding:0 ;text-align:center"
+                    class="form-control" name="name" value="Add Profile" disabled>
 
 
-                </div>
             </div>
+        </div>
         <div class="row">
-            {{!-- for profile photo --}}
-            
-            <div class="col-md-4">
-                <div class="card">
-                    <div class="card-body">
-                        <img class="card-img-top pt-3" src="images/profile-1.png" alt="" style="border-radius: 50%;">
-                    </div>
-                </div>
-            </div>
-            
+
+
             {{!-- For detailed Profile information --}}
-          
+            <div class="col-md-2"></div>
             <div class="col-md-8">
                 <div class="card">
                     <div class="card-body">
-                        
+
                         <form action="" enctype="multipart/form-data" method="post">
                             {{!-- Name --}}
 
@@ -37,182 +29,106 @@
                                         placeholder="Enter your Full Name">
                                 </div>
                             </div>
-                            {{!-- Date of Birth --}}
-                            <div class="form-group row">
-                                <label for="" class="col-sm-3 col-form-label">Date of Birth</label>
-                                <div class="col-sm-9">
-                                    <input type="date" class="form-control" style="height :2.250rem;" name="bday"
-                                        id="bday" placeholder="Enter your Date of Birth">
+                            {{!-- House name --}}
 
-                                </div>
-                            </div>
-                            {{!-- Gender --}}
                             <div class="form-group row">
-                                <label for="" class="col-sm-3 col-form-label">Gender</label>
+                                <label for="" class="col-sm-3 col-form-label">House Name</label>
                                 <div class="col-sm-9">
-                                    <select type="text" class="form-control" name="height" value="">
-                                        <option value="Male">Select</option>
-                                        <option value="Male">Male</option>
-                                        <option value="Female">Female</option>
-                                    </select>
+                                    <input type="text" class="form-control" name="house" id="house"
+                                        placeholder="Enter your House Name">
                                 </div>
                             </div>
-                            {{!-- Country --}}
-                           <div class="form-group row">
-                                <label for="" class="col-sm-3 col-form-label">Current Country</label>
-                                <div class="col-sm-9">
-                                    <select type="text" class="form-control" name="country" value="">
-                                        <option value="Male">Select</option>
-                                        <option value="Male">United Arab Emirates</option>
-                                        
+                            {{!-- Place --}}
 
-                            {{!-- Country End --}}
                             <div class="form-group row">
-                                <label for="" class="col-sm-3 col-form-label"> Current State</label>
+                                <label for="" class="col-sm-3 col-form-label">Place</label>
                                 <div class="col-sm-9">
-                                    <input type="text" class="form-control" name="state" placeholder="Enter your State">
+                                    <input type="text" class="form-control" name="place" id="place"
+                                        placeholder="Enter your place">
                                 </div>
                             </div>
+                            {{!-- Panchayath --}}
+
                             <div class="form-group row">
-                                <label for="" class="col-sm-3 col-form-label"> Current City</label>
+                                <label for="" class="col-sm-3 col-form-label">Panchayath</label>
                                 <div class="col-sm-9">
-                                    <input type="text" class="form-control" name="city" placeholder="Enter your City">
-                                </div>
-                            </div>
-                            <div class="form-group row">
-                                <label for="" class="col-sm-3 col-form-label">Nationality</label>
-                                <div class="col-sm-9">
-                                    <input type="text" class="form-control" name="nation"
-                                        placeholder="Enter your Nationality">
-                                </div>
-                            </div>
-                            <div class="form-group row">
-                                <label for="" class="col-sm-3 col-form-label">Height</label>
-                                <div class="col-sm-4">
-                                    <input type="number" class="form-control" name="height" placeholder="Height">
-                                </div>
-                                <div class="col-sm-2">
-                                    <select type="text" class="form-control" name="height" value="cm">
-                                        <option>cm</option>
-                                        <option>ft</option>
+                                    <select type="text" class="form-control" name="panchayath" id="panchayath" value="">
+                                        <option value="Thiruvallur">Thiruvallur</option>
+                                        <option value="Maniyur">Maniyur</option>
+                                        <option value="Velam">Velam</option>
+
                                     </select>
                                 </div>
                             </div>
+                            {{!-- mobile --}}
+
                             <div class="form-group row">
-                                <label for="" class="col-sm-3 col-form-label">Body Type</label>
+                                <label for="" class="col-sm-3 col-form-label">Mobile no</label>
                                 <div class="col-sm-9">
-                                    <select type="text" class="form-control" name="body type" value="">
-                                        <option value="Male">Select</option>
-                                        <option value="Male">Slim</option>
-                                        <option value="Female">Athletic</option>
-                                        <option value="Male">Average</option>
-                                        <option value="Male">Curvy</option>
-                                        <option value="Female">Heavy</option>
+                                    <input type="text" class="form-control" name="mobile" id="mobile"
+                                        placeholder="Enter your Mobile no">
+                                </div>
+                            </div>
+                            {{!-- job --}}
+
+                            <div class="form-group row">
+                                <label for="" class="col-sm-3 col-form-label">Job</label>
+                                <div class="col-sm-9">
+                                    <select type="text" class="form-control" name="job" id="job" value="">
+                                        <option value="Thiruvallur">Driver</option>
+                                        <option value="Maniyur">Electrician</option>
+                                        <option value="Velam">Plumber</option>
+                                        <option value="Velam">Mason</option>
+                                        <option value="Velam">Plastering</option>
+                                        <option value="Velam">Tile Fixing</option>
+                                        <option value="Velam">Welder</option>
+                                        <option value="Velam">Carpenter</option>
+                                        <option value="Velam">Technician</option>
+                                        <option value="Velam">Farm Worker</option>
+                                        <option value="Velam">Congrete</option>
+                                        <option value="Velam">Landscape</option>
+                                        <option value="Velam">Gypsum Work</option>
+                                        <option value="Velam">Cook</option>
+                                        <option value="Velam">Home Maid</option>
+                                        <option value="Velam">Painter</option>
+                                        <option value="Velam">Curtain</option>
+                                        <option value="Velam">Fabrication</option>
+                                        <option value="Velam">Water Proof</option>
+                                        <option value="Velam">Airconditioning</option>
+                                        <option value="Velam">Teacher</option>
+
+
+
+
                                     </select>
                                 </div>
                             </div>
+                            {{!-- Job Category --}}
+
                             <div class="form-group row">
-                                <label for="" class="col-sm-3 col-form-label">Hair</label>
+                                <label for="" class="col-sm-3 col-form-label">Job Category</label>
                                 <div class="col-sm-9">
-                                    <select type="text" class="form-control" name="hair" value="">
-                                        <option value="select">Select</option>
-                                        <option value="Blackish">Blackish</option>
-                                        <option value="Brownish">Brownish</option>
-                                        <option value="Yellowish">Yellowish</option>
-                                        <option value="Reddish">Reddish</option>
-                                        <option value="Greyish">Greyish</option>
-                                        <option value="Bald">Bald</option>
-                                        <option value="Other">Other</option>
+                                    <select type="text" class="form-control" name="category" id="category" value="">
+                                        <option value="Thiruvallur">Thiruvallur</option>
+                                        <option value="Maniyur">Maniyur</option>
+                                        <option value="Velam">Velam</option>
+
                                     </select>
                                 </div>
                             </div>
-                            {{!-- about --}}
+
+                            {{!-- Image --}}
+
                             <div class="form-group row">
-                                <label for="" class="col-sm-3 col-form-label">About me</label>
-                                <div class="col-sm-9">
-                                    <textarea class="form-control" rows="3" name="about"
-                                        placeholder="Maximum 500 characters"></textarea>
-                                </div>
-                            </div>
-                            {{!--Preferred Break Locations --}}
-                            <div class="form-group row">
-                                <label for="" class="col-sm-12 col-form-label"
-                                    style="text-decoration: underline">Preferred Break Locations :</label>
-                            </div>
-                            <div class="form-group row">
-                                <label for="" class="col-sm-3 col-form-label">Country</label>
-                                <div class="col-sm-9">
-                                    <input type="text" class="form-control" name="break-country"
-                                        placeholder="Enter the preferrable country for break">
-                                </div>
-                            </div>
-                            <div class="form-group row">
-                                <label for="" class="col-sm-3 col-form-label">State</label>
-                                <div class="col-sm-9">
-                                    <input type="text" class="form-control" name="break-state"
-                                        placeholder="Enter the preferrable State for break">
-                                </div>
-                            </div>
-                            <div class="form-group row">
-                                <label for="" class="col-sm-3 col-form-label">City</label>
-                                <div class="col-sm-9">
-                                    <input type="text" class="form-control" name="break-city"
-                                        placeholder="Enter the preferrable City for break">
-                                </div>
-                            </div>
-                            {{!--Images --}}
-                            <div class="form-group row">
-                                <label for="" class="col-sm-12 col-form-label" style="text-decoration: underline">Add
-                                    Optional pictures of you :</label>
-                            </div>
-                            <div class="form-group row">
-                                <label for="" class="col-sm-3 col-form-label">Image 1</label>
+                                <label for="" class="col-sm-3 col-form-label">Image </label>
                                 <div class="col-sm-9">
                                     <input type="file" class="form-control" name="image">
                                 </div>
                             </div>
-                            <div class="form-group row">
-                                <label for="" class="col-sm-3 col-form-label">Image 2</label>
-                                <div class="col-sm-9">
-                                    <input type="file" class="form-control" name="image">
-                                </div>
-                            </div>
-                            <div class="form-group row">
-                                <label for="" class="col-sm-3 col-form-label">Image 3</label>
-                                <div class="col-sm-9">
-                                    <input type="file" class="form-control" name="image">
-                                </div>
-                            </div>
-                            <div class="form-group row">
-                                <label for="" class="col-sm-3 col-form-label">Image 4</label>
-                                <div class="col-sm-9">
-                                    <input type="file" class="form-control" name="image">
-                                </div>
-                            </div>
-                            {{!--Video --}}
-                            <div class="form-group row">
-                                <label for="" class="col-sm-12 col-form-label" style="text-decoration: underline">Add
-                                    Optional video of you :</label>
-                            </div>
-                            <div class="form-group row">
-                                <label for="" class="col-sm-3 col-form-label">Video</label>
-                                <div class="col-sm-9">
-                                    <input type="file" class="form-control" name="video">
-                                </div>
-                            </div>
-                            {{!-- notifications --}}
-                            <div class="form-group row">
-                                <label for="" class="col-sm-3 col-form-label">Notifications</label>
-                                <div class="col-sm-9">
-                                    <select type="text" class="form-control" name="notifications" value="cm">
-                                        <option>ON</option>
-                                        <option>OFF</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="" style="text-align:center">
-                                <button type="submit" class="btn btn-outline-primary">Submit</button>
-                            </div>
+
+                            {{!-- Dropdown Job --}}
+                            
+                           
                         </form>
                     </div>
                 </div>
@@ -220,6 +136,8 @@
         </div>
     </div>
 </section>
+
+
 
 
 {{!--
