@@ -99,9 +99,26 @@ router.get('/profile', function (req, res) {
   res.render('user/profile')
 })
 
+router.get('/driver', function (req, res) {
+  res.render('user/driver')
+})
+
 router.get('/jeep', function (req, res) {
   res.render('user/jeep')
 })
+
+router.get('/job', function (req, res) {
+  res.render('user/job')
+})
+
+router.get('/buyorsell', function (req, res) {
+  res.render('user/buyorsell')
+})
+
+router.get('/buy-details', function (req, res) {
+  res.render('user/buy-details')
+})
+
 
 router.get('/notifications', function (req, res) {
   res.render('user/notifications')
@@ -182,9 +199,7 @@ router.get('/break-requests', function (req, res) {
   res.render('user/break-requests')
 })
 
-router.get('/driver', function (req, res) {
-  res.render('user/driver')
-})
+
 
 
 

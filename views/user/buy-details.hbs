@@ -1,0 +1,322 @@
+<section id="buy-details" class="bg-light" style="padding-bottom:40px; background-color:ghostwhite">
+    <!-- Team Start -->
+    <div class="container  pb-3">
+        <div class="row">
+            {{!-- MEMBER 1 --}}
+            <div class=" col-md-4 col-xs-6">
+                <div class="team card position-relative overflow-hidden border-0 mb-4 bg-light">
+                    <div class="pl-2" style="border: thin;border-color:#D31E3D ;">
+                        <h4 class="nav-link p-0 m-0">Innova Crysta</h4>
+                        <a class="nav-link p-0 m-0" style="font-size:.8rem">Kerala, Calicut</a>
+                    </div>
+
+
+                    <!-- Slideshow container -->
+                    <div class="slideshow-container">
+
+                        <!-- Full-width images with number and caption text -->
+                        <div class="mySlides ">
+                            <div class="numbertext">1 / 3</div>
+                            <img src="images/car1.jpg" style="width:100%">
+                            <div class="text">Front view</div>
+                        </div>
+
+                        <div class="mySlides ">
+                            <div class="numbertext">2 / 3</div>
+                            <img src="images/car2.jpg" style="width:100%">
+                            <div class="text">Side view</div>
+                        </div>
+
+                        <div class="mySlides">
+                            <div class="numbertext">3 / 3</div>
+                            <img src="images/car3.jpg" style="width:100%">
+                            <div class="text">Inside view</div>
+                        </div>
+
+                        <!-- Next and previous buttons -->
+                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                    </div>
+                    <br>
+
+                    <!-- The dots/circles -->
+                    <div style="text-align:center">
+                        <span class="dot" onclick="currentSlide(1)"></span>
+                        <span class="dot" onclick="currentSlide(2)"></span>
+                        <span class="dot" onclick="currentSlide(3)"></span>
+                    </div>
+
+
+                    <div class="topright pt-2 pr-2">
+
+                        <i class="material-icons" style="font-size:2rem;color:#D31E3D;">favorite_border</i>
+                        
+
+                    </div>
+                    <div class="card-body text-center pl-3rem pt-0">
+                        <div class="team-text d-flex flex-column justify-content-center"
+                            style="border: thin;border-color:#D31E3D ">
+
+                            <div class="row">
+                                
+                                <div class="column p-1">
+                                    <h3>Rs: 4500000</h3>
+                                </div>
+                                {{!-- <div class="column mt-3"><a href="/profile" class="link">
+                                        <i class="material-symbols-rounded" style="font-size:2rem;color:#D31E3D;">info
+                                        </i> </a>
+
+                                </div> --}}
+                            </div>
+                            {{!-- <p style="display:inline">Verified</p> --}}
+                            {{!-- <i class="material-icons" style="display:inline">place</i> --}}
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            {{!-- member details --}}
+
+            <div class="col-md-8">
+                <div class="card">
+                    <div class="card-body pt-1rem" style="">
+                        {{!-- edit button --}}
+
+
+                        {{!-- end of edit button --}}
+                        <form action="" enctype="multipart/form-data" method="post">
+                            {{!-- Name --}}
+                            {{!-- <input type="text" style="width:100%; height:40px; font-size:30px;padding:0" disabled
+                                class="form-control" name="name" value="James Thomas">
+                            <br> --}}
+                            {{!-- Date of Birth --}}
+                            {{!-- <div class="form-group row">
+                                <label for="" class="col-sm-3 col-form-label">Age</label>
+                                <div class="col-sm-9">
+                                    <input type="text" class="form-control" name="bday" id="bday" value="32" disabled>
+
+                                </div>
+                            </div> --}}
+                            <div class="form-group row">
+                                <label for="" class="col-sm-3 col-form-label">Model</label>
+                                <div class="col-sm-9">
+                                    <input type="text" class="form-control" name="height" value="2020" disabled>
+                                </div>
+
+                            </div>
+                            <div class="form-group row">
+                                <label for="" class="col-sm-3 col-form-label">Color</label>
+                                <div class="col-sm-9">
+                                    <input type="text" class="form-control" name="body-type" value="White" disabled>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="" class="col-sm-3 col-form-label">Mileage</label>
+                                <div class="col-sm-9">
+                                    <input type="text" class="form-control" name="hair" value="8.0kmpl" disabled>
+                                </div>
+                            </div>
+                            {{!-- Gender --}}
+                            <div class="form-group row">
+                                <label for="" class="col-sm-3 col-form-label">Seating Capacity</label>
+                                <div class="col-sm-9">
+                                    <input type="text" class="form-control" name="gender" value="8" disabled>
+                                </div>
+                            </div>
+
+                             <div class="form-group row">
+                                <label for="" class="col-sm-3 col-form-label">Driven</label>
+                                <div class="col-sm-9">
+                                    <input type="text" class="form-control" name="country"
+                                        value="63000km" disabled>
+                                </div>
+                            </div> 
+                            <div class="form-group row">
+                                <label for="" class="col-sm-3 col-form-label">Fuel Type</label>
+                                <div class="col-sm-9">
+                                    <input type="text" class="form-control" name="state" value="Petrol" disabled>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="" class="col-sm-3 col-form-label">Fuel Tank Capacity</label>
+                                <div class="col-sm-9">
+                                    <input type="text" class="form-control" name="city" value="65.0" disabled>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="" class="col-sm-3 col-form-label">Transmission Type</label>
+                                <div class="col-sm-9">
+                                    <input type="text" class="form-control" name="nation" value="Automatic" disabled>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="" class="col-sm-3 col-form-label">Owner</label>
+                                <div class="col-sm-9">
+                                    <input type="text" class="form-control" name="nation" value="1st" disabled>
+                                </div>
+                            </div>
+
+                            {{!--Preferred Break Locations --}}
+                            <div class="form-group row">
+                                <label for="" class="col-sm-12 col-form-label"
+                                    style="text-decoration: underline">Additional Vehicle Information</label>
+
+                            </div>
+                            <div class="form-group row">
+                                <label for="" class="col-sm-3 col-6 col-form-label">ABS</label>
+                                <label for="" class="col-sm-3 col-6 col-form-label">Yes</label>                               
+                            </div>
+                            <div class="form-group row">
+                                <label for="" class="col-sm-3 col-6 col-form-label">Accidental</label>
+                                <label for="" class="col-sm-3 col-6 col-form-label">No</label>                               
+                            </div>
+                            <div class="form-group row">
+                                <label for="" class="col-sm-3 col-6 col-form-label">Adjustable external mirror</label>
+                                <label for="" class="col-sm-3 col-6 col-form-label">Power</label>                               
+                            </div>
+                            <div class="form-group row">
+                                <label for="" class="col-sm-3 col-6 col-form-label">Adjustable steering</label>
+                                <label for="" class="col-sm-3 col-6 col-form-label">Yes</label>                               
+                            </div>
+                            <div class="form-group row">
+                                <label for="" class="col-sm-3 col-6 col-form-label">Alloy wheels</label>
+                                <label for="" class="col-sm-3 col-6 col-form-label">Yes</label>                               
+                            </div>
+                            <div class="form-group row">
+                                <label for="" class="col-sm-3 col-6 col-form-label">Anti theft device</label>
+                                <label for="" class="col-sm-3 col-6 col-form-label">Yes</label>                               
+                            </div>
+                            <div class="form-group row">
+                                <label for="" class="col-sm-3 col-6 col-form-label">Aux compatibility</label>
+                                <label for="" class="col-sm-3 col-6 col-form-label">Yes</label>                               
+                            </div>
+                            <div class="form-group row">
+                                <label for="" class="col-sm-3 col-6 col-form-label">Battery condition</label>
+                                <label for="" class="col-sm-3 col-6 col-form-label">New</label>                               
+                            </div>
+                            <div class="form-group row">
+                                <label for="" class="col-sm-3 col-6 col-form-label">Bluetooth</label>
+                                <label for="" class="col-sm-3 col-6 col-form-label">Yes</label>                               
+                            </div>
+                            <div class="form-group row">
+                                <label for="" class="col-sm-3 col-6 col-form-label">Cruise control</label>
+                                <label for="" class="col-sm-3 col-6 col-form-label">Yes</label>                               
+                            </div>
+                            <div class="form-group row">
+                                <label for="" class="col-sm-3 col-6 col-form-label">Insurance type</label>
+                                <label for="" class="col-sm-3 col-6 col-form-label">Zero dep</label>                               
+                            </div>
+                            <div class="form-group row">
+                                <label for="" class="col-sm-3 col-6 col-form-label">Lock system</label>
+                                <label for="" class="col-sm-3 col-6 col-form-label">Remote controlled central</label>                               
+                            </div>
+                            <div class="form-group row">
+                                <label for="" class="col-sm-3 col-6 col-form-label">Make month</label>
+                                <label for="" class="col-sm-3 col-6 col-form-label">October</label>                               
+                            </div>
+                            <div class="form-group row">
+                                <label for="" class="col-sm-3 col-6 col-form-label">Navigation system</label>
+                                <label for="" class="col-sm-3 col-6 col-form-label">Yes</label>                               
+                            </div>
+                            <div class="form-group row">
+                                <label for="" class="col-sm-3 col-6 col-form-label">Parking sensors</label>
+                                <label for="" class="col-sm-3 col-6 col-form-label">Yes</label>                               
+                            </div>
+                            <div class="form-group row">
+                                <label for="" class="col-sm-3 col-6 col-form-label">Power steering</label>
+                                <label for="" class="col-sm-3 col-6 col-form-label">Yes</label>                               
+                            </div>
+                            <div class="form-group row">
+                                <label for="" class="col-sm-3 col-6 col-form-label">AM/FM radio</label>
+                                <label for="" class="col-sm-3 col-6 col-form-label">Yes</label>                               
+                            </div>
+                            <div class="form-group row">
+                                <label for="" class="col-sm-3 col-6 col-form-label">Rear parking camera</label>
+                                <label for="" class="col-sm-3 col-6 col-form-label">Yes</label>                               
+                            </div>
+                            <div class="form-group row">
+                                <label for="" class="col-sm-3 col-6 col-form-label">Registration place</label>
+                                <label for="" class="col-sm-3 col-6 col-form-label">HR</label>                               
+                            </div>
+                            <div class="form-group row">
+                                <label for="" class="col-sm-3 col-6 col-form-label">Exchange</label>
+                                <label for="" class="col-sm-3 col-6 col-form-label">Yes</label>                               
+                            </div>
+                            <div class="form-group row">
+                                <label for="" class="col-sm-3 col-6 col-form-label">Finance</label>
+                                <label for="" class="col-sm-3 col-6 col-form-label">Yes</label>                               
+                            </div>
+                            <div class="form-group row">
+                                <label for="" class="col-sm-3 col-6 col-form-label">Service history</label>
+                                <label for="" class="col-sm-3 col-6 col-form-label">Available</label>                               
+                            </div>
+                            <div class="form-group row">
+                                <label for="" class="col-sm-3 col-6 col-form-label">Tyre condition</label>
+                                <label for="" class="col-sm-3 col-6 col-form-label">New</label>                               
+                            </div>
+                            <div class="form-group row">
+                                <label for="" class="col-sm-3 col-6 col-form-label">UBS compatibility</label>
+                                <label for="" class="col-sm-3 col-6 col-form-label">Yes</label>                               
+                            </div>
+                            
+
+                            
+                           
+                            {{!-- notifications --}}
+                            {{!-- <div class="form-group row">
+                                <label for="" class="col-sm-3 col-form-label">Notifications</label>
+                                <div class="col-sm-9">
+                                    <input type="text" class="form-control" name="notifications" value="ON" disabled>
+                                </div>
+                            </div> --}}
+
+
+
+
+
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+       
+    </div>
+
+    <!-- Team End -->
+
+
+
+</section>
+
+<script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+
+    // Next/previous controls
+    function plusSlides(n) {
+        showSlides(slideIndex += n);
+    }
+
+    // Thumbnail image controls
+    function currentSlide(n) {
+        showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
+        if (n > slides.length) { slideIndex = 1 }
+        if (n < 1) { slideIndex = slides.length }
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+    }
+</script>
