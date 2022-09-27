@@ -213,253 +213,31 @@
 <section class="bg-light pt-2" id="driver" style="padding-bottom:70px;">
     <div class="container">
         <div class="row p-2">
+            {{#each users}}
             <div class="col-sm-3 col-12 col-md-4 p-2">
                 <div class="card pb-2 " onclick="location.href='/profile'">
                     <div class="row">
                         <div class="col-5 col-md-5">
                             
-                                <img src="images/profile-1.png" alt="Avatar">
+                                <img src="profile-images/{{this._id}}.jpg" alt="Avatar">
                            
 
                         </div>
+                        
                         <div class="col-7 col-md-7">
-                            <p style="font-weight:bold ;padding-top:2px">Majeed komath</p> 
-                            <p>മജീദ് കോമത്  </p>
-                          <p >Shanthinagar</p><br><br>
-                          <p style="font-weight:bold ;padding-bottom:2px">9745580686</p>
+                            <p style="font-weight:bold ;padding-top:2px">{{this.name}}</p> 
+                            <p>{{this.house}}  </p>
+                          <p >{{this.place}}</p><br><br>
+                          <p style="font-weight:bold ;padding-bottom:2px">{{this.mobile}}</p>
                         </div>
+                        
                     </div>
 
                     
-                    {{!--
-                    <p>Driver</p>
-                    <p>ഡ്രൈവർ</p> --}}
                 </div>
 
             </div>
-
-            <div class="col-sm-3 col-12 col-md-4 p-2">
-                <div class="card pb-2 " onclick="location.href='/profile'">
-                    <div class="row">
-                        <div class="col-5 col-md-5">
-                            
-                                <img src="images/profile-1.png" alt="Avatar">
-                           
-
-                        </div>
-                        <div class="col-7 col-md-7">
-                            <p style="font-weight:bold ;padding-top:2px">Majeed komath</p> 
-                            <p>മജീദ് കോമത്  </p>
-                          <p >Shanthinagar</p><br><br>
-                          <p style="font-weight:bold ;padding-bottom:2px">9745580686</p>
-                        </div>
-                    </div>
-
-                    
-                    {{!--
-                    <p>Driver</p>
-                    <p>ഡ്രൈവർ</p> --}}
-                </div>
-
-            </div>
-
-            <div class="col-sm-3 col-12 col-md-4 p-2">
-                <div class="card pb-2 " onclick="location.href='/profile'">
-                    <div class="row">
-                        <div class="col-5 col-md-5">
-                            
-                                <img src="images/profile-1.png" alt="Avatar">
-                           
-
-                        </div>
-                        <div class="col-7 col-md-7">
-                            <p style="font-weight:bold ;padding-top:2px">Majeed komath</p> 
-                            <p>മജീദ് കോമത്  </p>
-                          <p >Shanthinagar</p><br><br>
-                          <p style="font-weight:bold ;padding-bottom:2px">9745580686</p>
-                        </div>
-                    </div>
-
-                    
-                    {{!--
-                    <p>Driver</p>
-                    <p>ഡ്രൈവർ</p> --}}
-                </div>
-
-            </div>
-
-            <div class="col-sm-3 col-12 col-md-4 p-2">
-                <div class="card pb-2 " onclick="location.href='/profile'">
-                    <div class="row">
-                        <div class="col-5 col-md-5">
-                            
-                                <img src="images/profile-1.png" alt="Avatar">
-                           
-
-                        </div>
-                        <div class="col-7 col-md-7">
-                            <p style="font-weight:bold ;padding-top:2px">Majeed komath</p> 
-                          <p >Shanthinagar</p><br><br><br>
-                          <p style="font-weight:bold ;padding-bottom:2px">9745580686</p>
-                        </div>
-                    </div>
-
-                    
-                    {{!--
-                    <p>Driver</p>
-                    <p>ഡ്രൈവർ</p> --}}
-                </div>
-
-            </div>
-
-            <div class="col-sm-3 col-12 col-md-4 p-2">
-                <div class="card pb-2 " onclick="location.href='/profile'">
-                    <div class="row">
-                        <div class="col-5 col-md-5">
-                            
-                                <img src="images/profile-1.png" alt="Avatar">
-                           
-
-                        </div>
-                        <div class="col-7 col-md-7">
-                            <p style="font-weight:bold ;padding-top:2px">Majeed komath</p> 
-                          <p >Shanthinagar</p><br><br><br>
-                          <p style="font-weight:bold ;padding-bottom:2px">9745580686</p>
-                        </div>
-                    </div>
-
-                    
-                    {{!--
-                    <p>Driver</p>
-                    <p>ഡ്രൈവർ</p> --}}
-                </div>
-
-            </div>
-
-            <div class="col-sm-3 col-12 col-md-4 p-2">
-                <div class="card pb-2 " onclick="location.href='/profile'">
-                    <div class="row">
-                        <div class="col-5 col-md-5">
-                            
-                                <img src="images/profile-1.png" alt="Avatar">
-                           
-
-                        </div>
-                        <div class="col-7 col-md-7">
-                            <p style="font-weight:bold ;padding-top:2px">Majeed komath</p> 
-                          <p >Shanthinagar</p><br><br><br>
-                          <p style="font-weight:bold ;padding-bottom:2px">9745580686</p>
-                        </div>
-                    </div>
-
-                    
-                    {{!--
-                    <p>Driver</p>
-                    <p>ഡ്രൈവർ</p> --}}
-                </div>
-
-            </div>
-
-            <div class="col-sm-3 col-12 col-md-4 p-2">
-                <div class="card pb-2 " onclick="location.href='/profile'">
-                    <div class="row">
-                        <div class="col-5 col-md-5">
-                            
-                                <img src="images/profile-1.png" alt="Avatar">
-                           
-
-                        </div>
-                        <div class="col-7 col-md-7">
-                            <p style="font-weight:bold ;padding-top:2px">Majeed komath</p> 
-                          <p >Shanthinagar</p><br><br><br>
-                          <p style="font-weight:bold ;padding-bottom:2px">9745580686</p>
-                        </div>
-                    </div>
-
-                    
-                    {{!--
-                    <p>Driver</p>
-                    <p>ഡ്രൈവർ</p> --}}
-                </div>
-
-            </div>
-
-            <div class="col-sm-3 col-12 col-md-4 p-2">
-                <div class="card pb-2 " onclick="location.href='/profile'">
-                    <div class="row">
-                        <div class="col-5 col-md-5">
-                            
-                                <img src="images/profile-1.png" alt="Avatar">
-                           
-
-                        </div>
-                        <div class="col-7 col-md-7">
-                            <p style="font-weight:bold ;padding-top:2px">Majeed komath</p> 
-                          <p >Shanthinagar</p><br><br><br>
-                          <p style="font-weight:bold ;padding-bottom:2px">9745580686</p>
-                        </div>
-                    </div>
-
-                    
-                    {{!--
-                    <p>Driver</p>
-                    <p>ഡ്രൈവർ</p> --}}
-                </div>
-
-            </div>
-
-            <div class="col-sm-3 col-12 col-md-4 p-2">
-                <div class="card pb-2 " onclick="location.href='/profile'">
-                    <div class="row">
-                        <div class="col-5 col-md-5">
-                            
-                                <img src="images/profile-1.png" alt="Avatar">
-                           
-
-                        </div>
-                        <div class="col-7 col-md-7">
-                            <p style="font-weight:bold ;padding-top:2px">Majeed komath</p> 
-                          <p >Shanthinagar</p><br><br><br>
-                          <p style="font-weight:bold ;padding-bottom:2px">9745580686</p>
-                        </div>
-                    </div>
-
-                    
-                    {{!--
-                    <p>Driver</p>
-                    <p>ഡ്രൈവർ</p> --}}
-                </div>
-
-            </div>
-
-            <div class="col-sm-3 col-12 col-md-4 p-2">
-                <div class="card pb-2 " onclick="location.href='/profile'">
-                    <div class="row">
-                        <div class="col-5 col-md-5">
-                            
-                                <img src="images/profile-1.png" alt="Avatar">
-                           
-
-                        </div>
-                        <div class="col-7 col-md-7">
-                            <p style="font-weight:bold ;padding-top:2px">Majeed komath</p> 
-                          <p >Shanthinagar</p><br><br><br>
-                          <p style="font-weight:bold ;padding-bottom:2px">9745580686</p>
-                        </div>
-                    </div>
-
-                    
-                    {{!--
-                    <p>Driver</p>
-                    <p>ഡ്രൈവർ</p> --}}
-                </div>
-
-            </div>
-
-
-
-
-
+            {{/each}}
 
 
 
@@ -469,34 +247,3 @@
   
 
 
-{{!--
-<script type="text/javascript">
-    function dobcheck() {
-        var birth = document.getElementById('bday')
-        if (birth != "") {
-
-            var record = document.getElementById('bday').value.trim();
-            var currentdate = new Date();
-            var day1 = currentdate3.getDate();
-            var month1 = currentdate3.getMonth();
-            month1++;
-            var year11 = currentdate3.getFullYear() - 17;
-            var year2 = currentdate3.getFullYear() - 100;
-            var record_day1 = record.split("/");
-            var sum = record_day1[1] + '/' + record_day1[0] + '/' + record_day1[2];
-            var current = month1 + '/' + day1 + '/' + year11;
-            var current1 = month1 + '/' + day1 + '/' + year2;
-            var d1 = new Date(current)
-            var d2 = new Date(current1)
-            var record1 = new Date(sum);
-            if (record1 > d1) {
-
-                alert("Sorry ! Minors need parential guidance to use this website");
-                document.getElementById('bday').blur();
-                document.getElementById('bday').value = "";
-                document.getElementById('bday').focus();
-                return false;
-            }
-        }
-    }
-</script> --}}

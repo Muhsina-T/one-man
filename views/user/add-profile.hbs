@@ -19,7 +19,7 @@
                 <div class="card">
                     <div class="card-body">
 
-                        <form action="" enctype="multipart/form-data" method="post">
+                        <form action="/add-profile" enctype="multipart/form-data" method="post">
                             {{!-- Name --}}
 
                             <div class="form-group row">
@@ -50,9 +50,10 @@
                             {{!-- Panchayath --}}
 
                             <div class="form-group row">
-                                <label for="" class="col-sm-3 col-form-label">Panchayath</label>
+                                <label for="" class="col-sm-3 col-form-label">Panchayat</label>
                                 <div class="col-sm-9">
-                                    <select type="text" class="form-control" name="panchayath" id="panchayath" value="">
+                                    <select type="text" class="form-control" name="panchayath" id="panchayath" value="" >
+                                        <option value="Thiruvallur">Choose a panchayat...</option>
                                         <option value="Thiruvallur">Thiruvallur</option>
                                         <option value="Maniyur">Maniyur</option>
                                         <option value="Velam">Velam</option>
@@ -75,27 +76,12 @@
                                 <label for="" class="col-sm-3 col-form-label">Job</label>
                                 <div class="col-sm-9">
                                     <select type="text" class="form-control" name="job" id="job" value="">
+                                        <option value="Thiruvallur">Choose a job...</option>
                                         <option value="Thiruvallur">Driver</option>
                                         <option value="Maniyur">Electrician</option>
                                         <option value="Velam">Plumber</option>
                                         <option value="Velam">Mason</option>
-                                        <option value="Velam">Plastering</option>
-                                        <option value="Velam">Tile Fixing</option>
-                                        <option value="Velam">Welder</option>
-                                        <option value="Velam">Carpenter</option>
-                                        <option value="Velam">Technician</option>
-                                        <option value="Velam">Farm Worker</option>
-                                        <option value="Velam">Congrete</option>
-                                        <option value="Velam">Landscape</option>
-                                        <option value="Velam">Gypsum Work</option>
-                                        <option value="Velam">Cook</option>
-                                        <option value="Velam">Home Maid</option>
-                                        <option value="Velam">Painter</option>
-                                        <option value="Velam">Curtain</option>
-                                        <option value="Velam">Fabrication</option>
-                                        <option value="Velam">Water Proof</option>
-                                        <option value="Velam">Airconditioning</option>
-                                        <option value="Velam">Teacher</option>
+                                        
 
 
 
@@ -109,9 +95,10 @@
                                 <label for="" class="col-sm-3 col-form-label">Job Category</label>
                                 <div class="col-sm-9">
                                     <select type="text" class="form-control" name="category" id="category" value="">
-                                        <option value="Thiruvallur">Thiruvallur</option>
-                                        <option value="Maniyur">Maniyur</option>
-                                        <option value="Velam">Velam</option>
+                                        <option value="">Choose a job category...</option>
+                                        <option value="bus">Bus</option>
+                                        <option value="car">Car</option>
+                                        <option value="jeep">Jeep</option>
 
                                     </select>
                                 </div>
@@ -126,7 +113,7 @@
                                 </div>
                             </div>
 
-                            {{!-- Dropdown Job --}}
+                            <button type="submit" class="btn btn-primary" style="float: right;">Submit</button>
                             
                            
                         </form>
@@ -140,34 +127,4 @@
 
 
 
-{{!--
-<script type="text/javascript">
-    function dobcheck() {
-        var birth = document.getElementById('bday')
-        if (birth != "") {
 
-            var record = document.getElementById('bday').value.trim();
-            var currentdate = new Date();
-            var day1 = currentdate3.getDate();
-            var month1 = currentdate3.getMonth();
-            month1++;
-            var year11 = currentdate3.getFullYear() - 17;
-            var year2 = currentdate3.getFullYear() - 100;
-            var record_day1 = record.split("/");
-            var sum = record_day1[1] + '/' + record_day1[0] + '/' + record_day1[2];
-            var current = month1 + '/' + day1 + '/' + year11;
-            var current1 = month1 + '/' + day1 + '/' + year2;
-            var d1 = new Date(current)
-            var d2 = new Date(current1)
-            var record1 = new Date(sum);
-            if (record1 > d1) {
-
-                alert("Sorry ! Minors need parential guidance to use this website");
-                document.getElementById('bday').blur();
-                document.getElementById('bday').value = "";
-                document.getElementById('bday').focus();
-                return false;
-            }
-        }
-    }
-</script> --}}

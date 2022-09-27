@@ -282,20 +282,43 @@ h6 {font-size: .9rem; }
 
 }
 
+
 #header .navbar .desktop-list li {
   display: inline-block;
   margin: 0 35px;
 
 }
 
-#header .navbar .mobile-list li {
-  display: inline-block;
-  margin: 0 10px;
-
+#header .desktop-list .add a{
+  
+  border:black; 
+  border-width:0.1rem; 
+  border-style:solid;
+  padding: 0.5rem;
+  border-radius: 30px;
 }
+
+
+
+
 
 #header .mobile-list {
   display: none;
+}
+
+#header .btn-primary{
+  
+    
+    padding: 14px 28px ;
+    border-radius: 30px;
+    color: black;
+    background-color: #fff;
+    border-color: black;
+    border-bottom-width: 2px;
+    text-shadow: none;
+    width: 10rem;
+    height: 1rem;
+    text-align: center;
 }
 
 
@@ -804,7 +827,9 @@ body {
 
 /* slide photo */
 
-* {box-sizing:border-box}
+* {
+  box-sizing:border-box
+}
 
 /* Slideshow container */
 .slideshow-container {
@@ -841,9 +866,9 @@ body {
 }
 
 /* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
+/*  .prev:hover, .next:hover {
   background-color: rgba(0,0,0,0.8);
-}
+} */
 
 /* Caption text */
 .text {
@@ -881,4 +906,4 @@ body {
   background-color: #717171;
 }
 
-/* Fading animation */
+

@@ -12,7 +12,28 @@ var instance = new Razorpay({
 //const collections = require('../config/collections');
 // const async = require('hbs/lib/async');
 
-module.exports = {
+module.exports = {    
+
+    addProfile:(userData)=>{
+        
+        return new Promise(async (resolve, reject) =>{
+            db.get().collection(collection.USER_COLLECTION).insertOne(userData).then((data)=>{
+                resolve(data)
+                console.log("hey",data);
+            })
+
+        })
+
+    },
+    getAllUsers:()=>{
+        return new Promise(async(resolve,reject)=>{
+            let users=await db.get().collection(collection.USER_COLLECTION).find().toArray()
+            
+            resolve(users)
+            
+
+        })
+    },
     doSignup: (userData) => {
         return new Promise(async (resolve, reject) => {
             // const salt = await bcrypt.genSalt(10);

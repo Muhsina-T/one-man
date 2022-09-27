@@ -1,6 +1,7 @@
 const {response}=require('express');
 var express = require('express');
 const { redirect } = require('express/lib/response');
+const { ObjectId } = require('mongodb');
 // const req = require('express/lib/request');
 var router = express.Router();
 const productHelpers = require('../helpers/product-helpers');
@@ -40,6 +41,7 @@ router.get('/signup', (req, res) => {
 
 router.post('/signup', (req, res) => {
   userHelpers.doSignup(req.body).then((response) => {
+
     console.log(response);
     req.session.user=response
     req.session.user.loggedIn=true
@@ -94,9 +96,37 @@ router.get('/members', function (req, res) {
   res.render('user/members')
 })
 
+router.get('/add-profile', (req, res)=> {
+  res.render('user/add-profile')
+})
 
-router.get('/profile', function (req, res) {
-  res.render('user/profile')
+router.post('/add-profile',(req,res)=>{
+  console.log("hhhhhh",req.body);
+  userHelpers.addProfile(req.body).then((id)=>{
+    console.log("pppp",id);
+    let image = req.files.image
+    console.log("hiiiiii",id.insertedId);
+    let x=id.insertedId
+     id= x.toString()
+     console.log("lololoo",id);
+      image.mv('./public/profile-images/' + id + '.jpg', (err) => {
+        if (!err) {
+          res.render('user/home')
+        } else {
+          console.log(err);
+        }
+      })
+    
+  })
+
+})
+
+router.get('/profile', function (req, res,) {
+  userHelpers.getAllUsers().then((users)=>{
+   
+    res.render('user/profile',{users})
+    
+  })
 })
 
 router.get('/driver', function (req, res) {
@@ -120,6 +150,8 @@ router.get('/buy-details', function (req, res) {
 })
 
 
+
+
 router.get('/notifications', function (req, res) {
   res.render('user/notifications')
 })
@@ -128,9 +160,7 @@ router.get('/blog', function (req, res) {
   res.render('user/blog')
 })
 
-router.get('/add-profile', function (req, res) {
-  res.render('user/add-profile')
-})
+
 
 router.get('/add-person', function (req, res) {
   res.render('user/add-person')
