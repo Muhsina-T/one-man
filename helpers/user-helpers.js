@@ -25,10 +25,14 @@ module.exports = {
         })
 
     },
-    getAllUsers:()=>{
+    getAllUsers:(job)=>{
+        console.log("dataaaaaa",job);
         return new Promise(async(resolve,reject)=>{
-            let users=await db.get().collection(collection.USER_COLLECTION).find().toArray()
-            
+           
+
+            let users=await db.get().collection(collection.USER_COLLECTION).find({job:job}).toArray()
+            console.log("uuusersssss",users);
+                      
             resolve(users)
             
 

@@ -714,7 +714,7 @@ body {
   margin:0;
 }
 
-#driver .card{
+#profile .card{
   align-items:left;
   border-radius: 5%;
   cursor: pointer;
@@ -724,14 +724,14 @@ body {
 }
 
 
-#driver .card img{
+#profile .card img{
   height: 10rem;
-  width: auto;
+  width: 10rem;
   
   
 }
 
-#driver .card p{
+#profile .card p{
   padding: 0;
   margin: 0;
 }

@@ -6,6 +6,8 @@ const { ObjectId } = require('mongodb');
 var router = express.Router();
 const productHelpers = require('../helpers/product-helpers');
 const userHelpers = require('../helpers/user-helpers');
+
+
 const verifyLogin = (req,res,next)=>{
   if(req.session.userLoggedIn){
     next()
@@ -97,6 +99,7 @@ router.get('/members', function (req, res) {
 })
 
 router.get('/add-profile', (req, res)=> {
+  
   res.render('user/add-profile')
 })
 
@@ -121,8 +124,30 @@ router.post('/add-profile',(req,res)=>{
 
 })
 
-router.get('/profile', function (req, res,) {
-  userHelpers.getAllUsers().then((users)=>{
+router.get('/profile', (req, res) =>{
+  let job = req.query.job
+  userHelpers.getAllUsers(job).then((users)=>{
+   
+   
+    res.render('user/profile',{users})
+    
+  })
+})
+
+
+
+router.get('/plumber', (req, res)=> {
+  userHelpers.getAllUsers("plumber").then((users)=>{
+   
+   
+    res.render('user/profile',{users})
+    
+  })
+})
+
+router.get('/mason', (req, res)=> {
+  userHelpers.getAllUsers("mason").then((users)=>{
+   
    
     res.render('user/profile',{users})
     
