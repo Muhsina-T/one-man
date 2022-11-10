@@ -1,77 +1,29 @@
-<header id="header" style="padding-bottom:50px;  ">
+<header id="header" style="padding-bottom:50px; background-color:rgba(238, 237, 237, 0.87)" >
     {{!-- background-color:ghostwhite --}}
-    <nav class="navbar">
-        <div class="logo">
+    <nav class="navbar" >
+        <div class="logo" >
             <a href="/">
                 {{!-- <img style="max-width:150px; " src="images/logo.png"> --}}
-                <h3 style="font-weight:bold;color:blue">My Panchayath</h3>
+                <h3 style="font-weight:bold;color:rgb(85, 80, 80);font-style:italic;text-transform:uppercase;">Adeptize</h3>
              </a>
         </div>
         
-        {{!-- For desktop View --}}
-        <ul class="desktop-list ">
+        {{!-- For desktop View 
+        <ul class="desktop-list " style="margin-top: 0.75rem;">
             <li><a href="/home">Labours</a></li>
-            <li><a href="/dashboard">Animals</a></li>
+            <li><a href="/animals">Animals</a></li>
             <li><a href="/buyorsell">Buy/Sell</a></li>
             <li><a href="/members">Matrimony</a></li>
             <li><a href="/job">Job</a></li>
-            <li class="add"><a class="fa fa-plus"  href="/add-profile">Add Profile</a></li>
+            
 
             
             
-            {{!-- <li>
-                <a style="text-align:center;color:#2D79B3" href="/home">
-                    <i class="material-icons link " style="font-size:32px">
-                        home
-                        <div class="menu-items" style="font-size:12px">
-                            HOME
-                        </div>
-                    </i>
-                </a>
-            </li>
-            <li>
-                <a style="text-align:center;color:#2D79B3" href="/dashboard">
-                    <i class="material-icons link" style="font-size:32px">
-                        grid_view
-                        <div class="menu-items" style="font-size:12px">
-                            DASHBOARD
-                        </div>
-                    </i>
-                </a>
-            </li>
-            <li>
-                <a style="text-align:center;color:#2D79B3" href="/members">
-                    <i class="material-icons link" style="font-size:32px">
-                        groups_2
-                        <div class="menu-items" style="font-size:12px">
-                            MEMBERS
-                        </div>
-                    </i>
-                </a>
-            </li>
-            <li>
-                <a style="text-align:center;color:#2D79B3" href="/breaks">
-                    <i class="material-icons" style="font-size:32px">
-                        search
-                        <div class="menu-items" style="font-size:12px">
-                            BREAKS
-                        </div>
-                    </i>
-                </a>
-            </li>
-            <li>
-                <a style="font-size:x-small;color:#2D79B3" href="/blog">
-                    <i class="material-icons" style="font-size:32px">
-                        feed
-                        <div class="menu-items" style="font-size:12px">
-                            BLOG
-                        </div>
-                    </i>
-                </a>
-            </li> --}}
+           
         </ul>
+        --}}
 
-        {{!-- For Mobile View --}}
+        {{!-- For Mobile View 
         <ul class="mobile-list">
             <li>
                 <a style="text-align:center;color:#2D79B3" href="/home">
@@ -84,7 +36,7 @@
                 </a>
             </li>
             <li>
-                <a style="text-align:center;color:#2D79B3" href="/dashboard">
+                <a style="text-align:center;color:#2D79B3" href="/animals">
                     <i class="material-icons link">
                         grid_view
                         <div class="menu-items" style="font-size:x-small;visibility:visible">
@@ -126,29 +78,17 @@
         </ul>
         
     </nav>
-    <div class="transparent pl-3 " style="position:fixed;display: flex;z-index:1">
+    --}}
+    <div class="transparent  " style="position:fixed;display: flex;z-index:1;margin-left:0 ">
        
         <a href="/">
                 {{!-- <img style="max-width:150px; " src="images/logo.png"> --}}
-                <h3 style="font-weight:bold;color:indigo">My Panchayath</h3>
+                <h3 style="font-weight:bold;color:rgb(85, 80, 80);padding-top:4.5rem;font-style:italic;text-transform:uppercase;">Adeptize</h3>
                 
         </a>
         
     </div>
-    <div class="transparent pl-3 " style="position:fixed;display: flex;z-index:1">
-       
-       
-        
-        <button class="fa fa-plus " style=" margin-left:15.5rem; margin-top:0.1rem"  href="/add-profile">
-        {{#if user}}
-            {{user.name}}
-            {{else}}
-        Add Profile
-        {{/if}}
-        </button>
-        
-        
-    </div>
+   
     
     
     

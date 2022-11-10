@@ -2,5 +2,9 @@ module.exports={
     PRODUCT_COLLECTION:'product',
     USER_COLLECTION:'user',
     CART_COLLECTION:'cart',
-    ORDER_COLLECTION:'order'
+    ORDER_COLLECTION:'order',
+    ANIMAL_COLLECTION:'animal',
+    STATE_COLLECTION:'state',
+    CITYY_COLLECTION:'cityy',
+    VILLAGE_COLLECTION:'village'
 }

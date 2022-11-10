@@ -4,10 +4,14 @@ const bcrypt = require('bcrypt');
 const { response } = require('../app');
 var objectId = require('mongodb').ObjectId
 const Razorpay = require('razorpay');
+const collections = require('../config/collections');
 var instance = new Razorpay({
-    key_id: 'rzp_test_aIXYJv7LR1IQpy',
-    key_secret: 'ipI4vI5nSdU23CaTWZpmRU6x',
-});
+    key_id: 'rzp_test_qrHw3CVXN99uJu', 
+    key_secret: '1nBV9mR5Yr5Gyqq7KMRStA19' 
+   })
+let Country = require('country-state-city').Country;
+let State = require('country-state-city').State;
+let City = require('country-state-city').City;
 // const { ObjectId } = require('mongodb');
 //const collections = require('../config/collections');
 // const async = require('hbs/lib/async');
@@ -15,8 +19,9 @@ var instance = new Razorpay({
 module.exports = {    
 
     addProfile:(userData)=>{
-        
+        console.log("iiiiii",userData);
         return new Promise(async (resolve, reject) =>{
+            
             db.get().collection(collection.USER_COLLECTION).insertOne(userData).then((data)=>{
                 resolve(data)
                 console.log("hey",data);
@@ -25,19 +30,96 @@ module.exports = {
         })
 
     },
-    getAllUsers:(job)=>{
-        console.log("dataaaaaa",job);
+    getAllStates:(stateName)=>{
+       
         return new Promise(async(resolve,reject)=>{
-           
+            let states=await db.get().collection(collection.STATE_COLLECTION).find({states:stateName}).toArray()
+            
+            resolve(states)
+        })
+    },
+    getAllCities:(stateName)=>{
+        console.log("statenameee",stateName);
+        return new Promise(async(resolve,reject)=>{
+            let cities=await db.get().collection(collection.CITYY_COLLECTION).find({stateName:stateName}).toArray()
+            
+            resolve(cities)
+        })
 
+    },
+    getAllVillages:(cityName)=>{
+        console.log("citynameee",cityName);
+        return new Promise(async(resolve,reject)=>{
+            let villages=await db.get().collection(collection.VILLAGE_COLLECTION).find({cityName:cityName}).toArray()
+            
+            resolve(villages)
+        })
+
+    },
+    
+    addAnimal:(userData)=>{
+        console.log("userrrdataaaa",userData);
+        
+        return new Promise(async (resolve, reject) =>{
+            db.get().collection(collection.ANIMAL_COLLECTION).insertOne(userData).then((data)=>{
+                console.log("hohoo",userData);
+                console.log("kkkk",data);
+                resolve(data)
+                console.log("hello",data);
+            })
+
+        })
+
+    },
+    getAllUsers:(job)=>{
+        return new Promise(async(resolve,reject)=>{
             let users=await db.get().collection(collection.USER_COLLECTION).find({job:job}).toArray()
-            console.log("uuusersssss",users);
-                      
             resolve(users)
             
 
         })
     },
+    getAllUsersCategory:(job,category)=>{
+        return new Promise(async(resolve,reject)=>{
+            let users=await db.get().collection(collection.USER_COLLECTION).find({$and:[{job:job},{category:category}]}).toArray()
+            console.log("kaaaaaaa",category);
+            resolve(users)
+            
+
+        })
+
+    },
+    getAllAnimals:(category)=>{
+        console.log("uuuuussss",category);
+        return new Promise(async(resolve,reject)=>{
+            let animals=await db.get().collection(collection.ANIMAL_COLLECTION).find({category:category}).toArray()
+            console.log("aaaaaaai",animals);
+            resolve(animals)
+        })
+    },
+    generateRazorpay:(userData)=>{
+        return new Promise((resolve,reject)=>{
+            var options={
+                amount: 100,
+                currency: "INR",
+                receipt: ""+userData
+
+            };
+            instance.orders.create(options, function(err,order){
+                
+               if(err){
+                 console.log(err);
+               }else{
+                console.log("iddddd",order);
+                resolve(order)
+
+               }
+              })
+              
+        })
+
+    },
+   
     doSignup: (userData) => {
         return new Promise(async (resolve, reject) => {
             // const salt = await bcrypt.genSalt(10);
@@ -303,23 +385,23 @@ module.exports = {
             resolve(orderItems)
         })
     },
-    generateRazorpay: (orderId,total) => {
-        return new Promise((resolve, reject) => {
-            var options={
-                amount: total*100,
-                currency: "INR",
-                receipt: ""+orderId,
-                notes: {
-                    key1: "value3",
-                    key2: "value2"
-                }
-            }
-            instance.orders.create(options,function(err,order){
-                console.log(order)
-                resolve(order)
-            })
-        })
-    },
+   // generateRazorpay: (orderId,total) => {
+    //    return new Promise((resolve, reject) => {
+    //        var options={
+    //            amount: total*100,
+    //            currency: "INR",
+    //            receipt: ""+orderId,
+    //            notes: {
+    //                key1: "value3",
+    //                key2: "value2"
+    //            }
+     //       }
+     //       instance.orders.create(options,function(err,order){
+    //            console.log(order)
+    //            resolve(order)
+    //        })
+    //    })
+ //   },
     verifyPayment:(details)=>{
         return new Promise((resolve,reject)=>{
             const crypto=require('crypto');

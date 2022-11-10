@@ -1,0 +1,41 @@
+<section id="animal-profile">
+    <div class="container">
+       
+        <div class="row">
+            {{#each animals}}
+             <a class="topright btn btn-secondary btn-lg active fa fa-plus " href="/add-animal" >Add Animal</a>
+           
+            <div class="col-md-4 col-xs-6 p-2">
+                <div  class="card" style="box-shadow: 0 1px 3px 0 lightgray;">
+                    <div class="animals-card" style="cursor: pointer; border-radius: 5px 5px 0 0;">
+                        <div class="container" onclick="location.href='/break-details?id=6337659cd2c32b7f6d6e5d22&amp;btn=6337659cd2c32b7f6d6e5d22&amp;chat=true'">
+                            <div class="row" >
+                                <div class="col-md-12">
+                                   
+                                    <p>{{this.place}},{{this.panchayat}}</p>
+                                    <p>{{this.mobile}}</p>
+                                </div>
+                                <div class="col-md-12">
+                                    <img class="card-img-top " style="width:100%; height:18rem" src="animal-images/{{this._id}}.jpg" alt="Card image cap" onclick="location.href='/break-details?id=6337659cd2c32b7f6d6e5d22&amp;btn=6337659cd2c32b7f6d6e5d22&amp;chat=true'" style="cursor:pointer;border:thin solid;border-color:white;">
+                                </div>
+                                <div class="col-md-12 col-xs-12 ">
+                                    
+                                   
+                                     <h5>RS.{{this.price}}</h5>
+                                      
+                                      
+                                     
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            {{/each}}
+           
+        </div>
+    </div>
+
+</section>

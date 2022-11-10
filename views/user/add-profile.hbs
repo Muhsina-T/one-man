@@ -1,11 +1,11 @@
-<section id="add-profile" style="padding-bottom:70px; background-color:ghostwhite">
-    <div class="container">
+<section id="add-profile" style="padding-bottom:70px; background-color:rgba(238, 237, 237, 0.87)">
+    <div class="container ">
         <div class="row">
-            <div class="col-md-12">
+            {{!-- <div class="col-md-12"> --}}
                 {{!-- Heading--}}
                 {{!-- <h1 style="text-decoration:none">Add Profile</h1> --}}
-                <input type="text" style="width:100%; height:40px; font-size:30px;padding:0 ;text-align:center"
-                    class="form-control" name="name" value="Add Profile" disabled>
+                {{!-- <input type="text" style="width:100%; height:40px; font-size:30px;padding:0 ;text-align:center"
+                    class="form-control" name="name" value="Add Profile" disabled> --}}
 
 
             </div>
@@ -14,140 +14,628 @@
 
 
             {{!-- For detailed Profile information --}}
-            <div class="col-md-2"></div>
-            <div class="col-md-8">
-                <div class="card">
-                    <div class="card-body">
+            <div class="col-md-3 "></div>
+            <div class="col-md-6 ">
 
-                        <form action="/add-profile" enctype="multipart/form-data" method="post">
-                            {{!-- Name --}}
+                <div class="card-body">
 
-                            <div class="form-group row">
-                                <label for="" class="col-sm-3 col-form-label">Full Name</label>
-                                <div class="col-sm-9">
-                                    <input type="text" class="form-control" name="name" id="name"
-                                        placeholder="Enter your Full Name">
+                    <form id="checkout-form"  action="/add-profile" enctype="multipart/form-data" method="post">
+                        {{!-- Name --}}
+                        <div>
+                            <div class="geS5n">
+                                <div class="z12JJ">
+                                    <div class="M4DNQ">
+                                        <div id="i1" class="HoXoMd  " role="heading" aria-level="3"
+                                            aria-describedby="i4"  >
+                                            <span class="M7eMe"  >Full Name</span>
+                                            <span class="" style="color: #FF0000" id="i4" aria-label=" "> *</span>
+                                        </div>
+
+                                    </div>
                                 </div>
-                            </div>
-                            {{!-- House name --}}
+                                <div class="">
+                                    <div class="    ">
+                                        <div class="aCsJod ">
+                                            <div class="">
+                                                <div class="">
+                                                    <input type="text" class="form-control whsOnd "
+                                                        placeholder=" Enter your full name" name="name" required>
+                                                </div>
+                                                <div class="i9lrp mIZh1c">
 
-                            <div class="form-group row">
-                                <label for="" class="col-sm-3 col-form-label">House Name</label>
-                                <div class="col-sm-9">
-                                    <input type="text" class="form-control" name="house" id="house"
-                                        placeholder="Enter your House Name">
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                        <div class="LXRPh">
+
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-                            {{!-- Place --}}
 
-                            <div class="form-group row">
-                                <label for="" class="col-sm-3 col-form-label">Place</label>
-                                <div class="col-sm-9">
-                                    <input type="text" class="form-control" name="place" id="place"
-                                        placeholder="Enter your place">
-                                </div>
-                            </div>
-                            {{!-- Panchayath --}}
-
-                            <div class="form-group row">
-                                <label for="" class="col-sm-3 col-form-label">Panchayat</label>
-                                <div class="col-sm-9">
-                                    <select type="text" class="form-control" name="panchayath" id="panchayath" value="" >
-                                        <option value="Thiruvallur">Choose a panchayat...</option>
-                                        <option value="Thiruvallur">Thiruvallur</option>
-                                        <option value="Maniyur">Maniyur</option>
-                                        <option value="Velam">Velam</option>
-
-                                    </select>
-                                </div>
-                            </div>
-                            {{!-- mobile --}}
-
-                            <div class="form-group row">
-                                <label for="" class="col-sm-3 col-form-label">Mobile no</label>
-                                <div class="col-sm-9">
-                                    <input type="text" class="form-control" name="mobile" id="mobile"
-                                        placeholder="Enter your Mobile no">
-                                </div>
-                            </div>
-                            {{!-- job --}}
-
-                            <div class="form-group row">
-                                <label for="" class="col-sm-3 col-form-label">Job</label>
-                                <div class="col-sm-9">
-                                    <select type="text" class="form-control" name="job" id="job" value="">
-                                        <option value="Thiruvallur">Choose a job...</option>
-                                        <option value="driver">Driver</option>
-                                        <option value="electrician">Electrician</option>
-                                        <option value="plumber">Plumber</option>
-                                        <option value="mason">Mason</option>
-                                        <option value="plastering">Plastering</option>
-                                        <option value="tile-fixing">Tile Fixing</option>
-                                        <option value="welder">Welder</option>
-                                        <option value="carpenter">Carpenter</option>
-                                        <option value="technician">Technician</option>
-                                        <option value="farm-worker">Farm worker</option>
-                                        <option value="congrete">Congrete</option>
-                                        <option value="landscape">Lanscape</option>
-                                        <option value="gypsum-work">Gypsum work</option>
-                                        <option value="cook">Cook</option>
-                                        <option value="home-maid">Home maid</option>
-                                        <option value="painter">Painter</option>
-                                        <option value="curtain">Curtain</option>
-                                        <option value="fabrication">Fabrication</option>
-                                        <option value="water-proof">Water proof</option>
-                                        <option value="airconditioning">airconditioning</option>
-
-                                        
-
-
-
-
-                                    </select>
-                                </div>
-                            </div>
-                            {{!-- Job Category --}}
-
-                            <div class="form-group row">
-                                <label for="" class="col-sm-3 col-form-label">Job Category</label>
-                                <div class="col-sm-9">
-                                    <select type="text" class="form-control"  name="category" id="category" value="">
-                                        <option value="">Choose a job category...</option>
-                                        <option value="autorikshaw">Autorikshaw</option>
-                                        <option value="jeep">Jeep</option>
-                                        <option value="pickup">Pickup</option>
-                                        <option value="lorry">Lorry</option>
-                                        <option value="ambulance">Ambulance</option>
-                                        <option value="tourist-bus">Tourist Bus</option>
-                                        <option value="traveller">Traveller</option>
-                                        <option value="taxi">Taxi</option>
-                                        <option value="jcb">JCB</option>
-
-                                    </select>
-                                </div>
                             </div>
 
-                            {{!-- Image --}}
 
-                            <div class="form-group row">
-                                <label for="" class="col-sm-3 col-form-label">Image </label>
-                                <div class="col-sm-9">
-                                    <input type="file" class="form-control" name="image">
+
+                        </div>
+                        {{!-- House name --}}
+
+                        <div>
+                            <div class="geS5n">
+                                <div class="z12JJ">
+                                    <div class="M4DNQ">
+                                        <div id="i1" class="HoXoMd  " role="heading" aria-level="3"
+                                            aria-describedby="i4" name="house">
+                                            <span class="M7eMe">House Name</span>
+                                            <span class="" style="color: #FF0000" id="i4" aria-label=" "> *</span>
+                                        </div>
+
+                                    </div>
                                 </div>
+                                <div class="">
+                                    <div class="    ">
+                                        <div class="aCsJod ">
+                                            <div class="">
+                                                <div class="">
+                                                    <input type="text" class="form-control whsOnd "
+                                                        placeholder="Enter your house  name" name="house">
+                                                </div>
+                                                <div class="i9lrp mIZh1c">
+
+                                                </div>
+                                                <div jsname="XmnwAc" class="OabDMe cXrdqd">
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="LXRPh">
+                                            <div jsname="ty6ygf" class="ovnfwe Is7Fhb">
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
                             </div>
 
-                            <button type="submit" class="btn btn-primary" style="float: right;">Submit</button>
-                            
-                           
-                        </form>
-                    </div>
+
+
+                        </div>
+
+
+
+
+
+
+                        {{!-- State --}}
+                        <div>
+                            <div class="geS5n">
+                                <div class="z12JJ">
+                                    <div class="M4DNQ">
+                                        <div id="i1" class="HoXoMd  " role="heading" aria-level="3"
+                                            aria-describedby="i4">
+
+                                            <span class="M7eMe">Location(State)</span>
+
+                                            <span class="" style="color: #FF0000" id="i4" aria-label=" "> *</span>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="">
+                                    <div class="    ">
+                                        <div class="aCsJod ">
+                                            <div class="">
+                                                <div class="">
+                                                    <select type="text" class="form-control "
+                                                        style="font: 200 14px Roboto,RobotoDraft,Helvetica,Arial,sans-serif;"
+                                                        name="state" id="state-dropdown" onchange="handleSelect()">
+                                                        <option selected="true" disabled>Choose State</option>
+                                                        {{#each states}}
+                                                        <option value="{{this.stateName}}">{{this.stateName}}</option>
+                                                        {{/each}}
+                                                    </select>
+                                                </div>
+                                                <div class="i9lrp mIZh1c">
+
+                                                </div>
+                                                <div jsname="XmnwAc" class="OabDMe cXrdqd">
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="LXRPh">
+                                            <div jsname="ty6ygf" class="ovnfwe Is7Fhb">
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+
+
+                        </div>
+
+
+
+
+
+
+
+
+                        {{!-- city --}}
+
+                        <div>
+                            <div class="geS5n">
+                                <div class="z12JJ">
+                                    <div class="M4DNQ">
+                                        <div id="i1" class="HoXoMd  " role="heading" aria-level="3"
+                                            aria-describedby="i4">
+
+                                            <span class="M7eMe">Location(City)</span>
+
+                                            <span class="" style="color: #FF0000" id="i4" aria-label=" "> *</span>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="">
+                                    <div class="    ">
+                                        <div class="aCsJod ">
+                                            <div class="">
+                                                <div class="">
+                                                    <select type="text" class="form-control "
+                                                        style="font: 200 14px Roboto,RobotoDraft,Helvetica,Arial,sans-serif;"
+                                                        name="city" id="city-dropdown" onchange="handleSelect()">
+                                                        <option selected="true" disabled>Choose City</option>
+                                                        
+                                                    </select>
+                                                </div>
+                                                <div class="i9lrp mIZh1c">
+
+                                                </div>
+                                                <div jsname="XmnwAc" class="OabDMe cXrdqd">
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="LXRPh">
+                                            <div jsname="ty6ygf" class="ovnfwe Is7Fhb">
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+
+
+                        </div>
+
+
+                        {{!-- Panchayat --}}
+
+                         <div>
+                            <div class="geS5n">
+                                <div class="z12JJ">
+                                    <div class="M4DNQ">
+                                        <div id="i1" class="HoXoMd  " role="heading" aria-level="3"
+                                            aria-describedby="i4">
+
+                                            <span class="M7eMe">Location(village)</span>
+
+                                            <span class="" style="color: #FF0000" id="i4" aria-label=" "> *</span>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="">
+                                    <div class="    ">
+                                        <div class="aCsJod ">
+                                            <div class="">
+                                                <div class="">
+                                                    <select type="text" class="form-control "
+                                                        style="font: 200 14px Roboto,RobotoDraft,Helvetica,Arial,sans-serif;"
+                                                        name="village" id="village-dropdown" onchange="handleSelect()">
+                                                        <option selected="true" disabled>Choose Village</option>
+                                                        
+                                                    </select>
+                                                </div>
+                                                <div class="i9lrp mIZh1c">
+
+                                                </div>
+                                                <div jsname="XmnwAc" class="OabDMe cXrdqd">
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="LXRPh">
+                                            <div jsname="ty6ygf" class="ovnfwe Is7Fhb">
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+
+
+                        </div>
+
+                        {{!-- mobile --}}
+                        <div id="mobile">
+                            <div class="geS5n">
+                                <div class="z12JJ">
+                                    <div class="M4DNQ" >
+                                        <div id="i1" class="HoXoMd  " role="heading" aria-level="3"
+                                            aria-describedby="i4">
+                                            <span class="M7eMe" >Mobile no</span>
+                                            <span class="" style="color: #FF0000" id="i4" aria-label=" "> *</span>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="">
+                                    <div class="    ">
+                                        <div class="aCsJod ">
+                                            <div class="">
+                                                <div class="">
+                                                    <input type="text" class="form-control whsOnd "
+                                                        placeholder=" Enter your mobile no" name="mobile">
+                                                </div>
+                                                <div class="i9lrp mIZh1c">
+
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                        <div class="LXRPh">
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+
+
+                        </div>
+
+
+
+
+                        {{!-- job --}}
+
+                        <div>
+                            <div class="geS5n">
+                                <div class="z12JJ">
+                                    <div class="M4DNQ">
+                                        <div id="i1" class="HoXoMd  " role="heading" aria-level="3"
+                                            aria-describedby="i4">
+
+                                            <span class="M7eMe">Job</span>
+
+                                            <span class="" style="color: #FF0000" id="i4" aria-label=" "> *</span>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="">
+                                    <div class="    ">
+                                        <div class="aCsJod ">
+                                            <div class="">
+                                                <div class="">
+                                                    <select type="text" class="form-control "
+                                                        style="font: 200 14px Roboto,RobotoDraft,Helvetica,Arial,sans-serif;"
+                                                        name="job" id="job" onchange = "enableCategory(this)">
+                                                        <option selected="true" disabled>Choose your job</option>
+                                                        <option value="1">Driver</option>
+                                                        <option value="electrician">Electrician</option>
+                                                        <option value="plumber">Plumber</option>
+                                                        <option value="mason">Mason</option>
+                                                        <option value="plastering">Plastering</option>
+                                                        <option value="tile-fixing">Tile Fixing</option>
+                                                        <option value="welder">Welder</option>
+                                                        <option value="carpenter">Carpenter</option>
+                                                        <option value="technician">Technician</option>
+                                                        <option value="farm-worker">Farm worker</option>
+                                                        <option value="congrete">Congrete</option>
+                                                        <option value="landscape">Lanscape</option>
+                                                        <option value="gypsum-work">Gypsum work</option>
+                                                        <option value="cook">Cook</option>
+                                                        <option value="home-maid">Home maid</option>
+                                                        <option value="painter">Painter</option>
+                                                        <option value="curtain">Curtain</option>
+                                                        <option value="fabrication">Fabrication</option>
+                                                        <option value="water-proof">Water proof</option>
+                                                        <option value="airconditioning">airconditioning</option>
+
+                                                    </select>
+                                                </div>
+                                                <div class="i9lrp mIZh1c">
+
+                                                </div>
+                                                <div jsname="XmnwAc" class="OabDMe cXrdqd">
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="LXRPh">
+                                            <div jsname="ty6ygf" class="ovnfwe Is7Fhb">
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+
+
+                        </div>
+
+
+                        {{!-- Job Category --}}
+                        <div class="d-category" id="job-category">
+                            <div class="geS5n">
+                                <div class="z12JJ">
+                                    <div class="M4DNQ">
+                                        <div id="i1" class="HoXoMd  " role="heading" aria-level="3"
+                                            aria-describedby="i4">
+
+                                            <span class="M7eMe">Job Category</span>
+
+                                            <span class="" style="color: #FF0000" id="i4" aria-label=" "> *</span>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="">
+                                    <div class="    ">
+                                        <div class="aCsJod ">
+                                            <div class="">
+                                                <div class="">
+                                                    <select type="text" class="form-control "
+                                                        style="font: 200 14px Roboto,RobotoDraft,Helvetica,Arial,sans-serif;"
+                                                        name="category" id="category">
+                                                        <option selected="true" disabled>Choose your job category
+                                                        </option>
+                                                        <option value="">Choose a job category...</option>
+                                                        <option value="autorikshaw">Autorikshaw</option>
+                                                        <option value="jeep">Jeep</option>
+                                                        <option value="pickup">Pickup</option>
+                                                        <option value="lorry">Lorry</option>
+                                                        <option value="ambulance">Ambulance</option>
+                                                        <option value="tourist-bus">Tourist Bus</option>
+                                                        <option value="traveller">Traveller</option>
+                                                        <option value="taxi">Taxi</option>
+                                                        <option value="jcb">JCB</option>
+
+                                                    </select>
+                                                </div>
+                                                <div class="i9lrp mIZh1c">
+
+                                                </div>
+                                                <div jsname="XmnwAc" class="OabDMe cXrdqd">
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="LXRPh">
+                                            <div jsname="ty6ygf" class="ovnfwe Is7Fhb">
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+
+
+                        </div>
+
+                        <script>
+                        function enableCategory(answer){
+                            console.log(answer.value);
+                            if(answer.value == 1){
+                                document.getElementById('job-category').classList.remove('d-category')
+                            }else{
+                                document.getElementById('job-category').classList.add('d-category')
+                            }
+                        }
+
+                        </script>
+
+
+
+
+
+                        {{!-- Image --}}
+                        <div>
+                            <div class="geS5n">
+                                <div class="z12JJ">
+                                    <div class="M4DNQ">
+                                        <div id="i1" class="HoXoMd  " role="heading" aria-level="3"
+                                            aria-describedby="i4">
+                                            <span class="M7eMe">Image</span>
+                                            <span class="" style="color: #FF0000" id="i4" aria-label=" "> *</span>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="">
+                                    <div class="    ">
+                                        <div class="aCsJod ">
+                                            <div class="">
+                                                <div class="">
+                                                    <input type="file" class="form-control whsOnd " name="image">
+                                                </div>
+                                                <div class="i9lrp mIZh1c">
+
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                        <div class="LXRPh">
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+
+
+                        </div>
+
+                        <button type="submit" class="btn btn-primary float-right">Submit</button>
+
+                    </form>
                 </div>
+
             </div>
         </div>
     </div>
 </section>
 
+<script>
+    // for country-state-city
+
+   // var stateName = "abcd"
+
+
+    document.getElementById("state-dropdown").onchange = function city() {
+        stateName = document.getElementById('state-dropdown').value;
+        $.ajax({
+            url: '/get-city',
+            data: {
+                stateName: stateName
+                
+                
 
 
 
+            },
+            method: 'post',
+            success: (response) => {
+                
+                let dropdown = $('#city-dropdown');
 
+                dropdown.empty();
+
+                dropdown.append('<option selected="true" disabled>Choose City/Province</option>');
+                dropdown.prop('selectedIndex', 0);
+
+                $.each(response.cities, function (key, entry) {
+                    
+                    dropdown.append($('<option></option>').attr('value', entry.cityName).text(entry.cityName));
+
+                })
+            }
+        })
+    }
+
+
+</script>
+<script>
+    // for country-state-city
+
+   // var stateName = "abcd"
+
+
+    document.getElementById("city-dropdown").onchange = function village() {
+        cityName = document.getElementById('city-dropdown').value;
+        $.ajax({
+            url: '/get-village',
+            data: {
+                cityName: cityName
+                
+                
+
+
+
+            },
+            method: 'post',
+            success: (response) => {
+                
+                let dropdown = $('#village-dropdown');
+
+                dropdown.empty();
+
+                dropdown.append('<option selected="true" disabled>Choose village/Province</option>');
+                dropdown.prop('selectedIndex', 0);
+
+                $.each(response.villages, function (key, entry) {
+                    
+                    dropdown.append($('<option></option>').attr('value', entry.villageName).text(entry.villageName));
+
+                })
+            }
+        })
+    }
+
+ 
+</script>
+<script type="text/javascript">
+var checkout-form = document.getElementById('checkout-form')
+    $("#checkout-form").submit((e)=>{
+        e.preventDefault()
+        $.ajax({
+            url:'/add-profile',
+            method:'post',
+            data: $('#checkout-form').serialize(),
+            success:(response)=>{
+                alert(response)
+                
+                razorpayPayment(response)
+            }
+        })
+    })
+    function razorpayPayment(order){
+        var options = {
+    "key": "rzp_test_qrHw3CVXN99uJu", // Enter the Key ID generated from the Dashboard
+    "amount": order.amount, // Amount is in currency subunits. Default currency is INR. Hence, 50000 refers to 50000 paise
+    "currency": "INR",
+    "name": "Adeptize",
+    "description": "Test Transaction",
+    "image": "https://example.com/your_logo",
+    "order_id": order.id, //This is a sample Order ID. Pass the `id` obtained in the response of Step 1    
+    "handler": function(response){
+        alert(response.razorpay_payment_id);
+        alert(response.razorpay_order_id);
+        alert(response.razorpay_signature);
+
+        verifyPayment(response,order)
+
+    },
+    "prefill": {
+        "name": "Gaurav Kumar",
+        "email": "gaurav.kumar@example.com",
+        "contact": "9999999999"
+    },
+    "notes": {
+        "address": "Razorpay Corporate Office"
+    },
+    "theme": {
+        "color": "#3399cc"
+    }
+};
+var rzp1 = new Razorpay(options);
+rzp1.open();
+    }
+    function verifyPayment(payment,order){
+        $.ajax({
+            url:'/verify-payment',
+            data:{
+                payment,
+                order
+            },
+            method:'post'
+        })
+    }
+</script>

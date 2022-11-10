@@ -1,0 +1,127 @@
+<section id="add-animal" style="padding-bottom:70px; background-color:ghostwhite;">
+    <div class="container" >
+        <div class="row" >
+            <div class="col-md-12" >
+                {{!-- Heading--}}
+                {{!-- <h1 style="text-decoration:none">Add Profile</h1> --}}
+                <input type="text" style="width:100%; height:40px; font-size:30px;padding:0 ;text-align:center"
+                    class="form-control" name="name" value="Add Animal" disabled>
+
+
+            </div>
+        </div>
+        <div class="row">
+
+
+            {{!-- For detailed Profile information --}}
+            <div class="col-md-2"></div>
+            <div class="col-md-8">
+                <div class="card" style="border:0;">
+                    <div class="card-body">
+
+                        <form action="/add-animal" enctype="multipart/form-data" method="post">
+                            {{!-- Name --}}
+
+                            
+                            <div class="form-group row">
+                                <label for="" class="col-sm-3 col-form-label">Animal Category<span style="color: #FF0000;font-weight:bold"> *</span></label>
+                                <div class="col-sm-9">
+                                    <select type="text" class="form-control" name="category" id="category" value="" required="">
+                                        <option value="">Select a category...</option>
+                                        <option value="cow">Cow</option>
+                                        <option value="goat">Goat</option>
+                                        <option value="cat">Cat</option>
+                                        <option value="hen">Hen</option>
+                                        <option value="fish">Fish</option>
+                                        <option value="rabbit">Rabbit</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            {{!--DOB--}}
+
+                            <div class="form-group row">
+                                <label for="" class="col-sm-3 col-form-label">Date of Birth<span style="color: #FF0000;font-weight:bold"> *</span></label>
+                                <div class="col-sm-9">
+
+                                    <input type="date" class="form-control" style="height :2.250rem;" name="bday" id="bday" placeholder="Enter your Date of Birth" required="" onchange="handleSelect()">
+                                    <p id="ageAlert" style="font-size:0.8rem;margin-bottom:0;color:#FF0000"></p>
+
+
+                                </div>
+                            </div>
+
+                            {{!--Gender--}}
+                            <div class="form-group row">
+                                <label for="" class="col-sm-3 col-form-label">Gender<span style="color: #FF0000;font-weight:bold"> *</span></label>
+                                <div class="col-sm-9">
+                                    <select type="text" class="form-control" name="gender" value="" required="">
+                                        <option value="">Select</option>
+                                        <option value="Male">Male</option>
+                                        <option value="Female">Female</option>
+                                    </select>
+                                </div>
+                            </div>
+                           
+                            {{!-- Place --}}
+
+                            <div class="form-group row">
+                                <label for="" class="col-sm-3 col-form-label">Place<span style="color: #FF0000;font-weight:bold"> *</span></label>
+                                <div class="col-sm-9">
+                                    <input type="text" class="form-control" name="place" id="place"
+                                        placeholder="Enter your Place">
+                                </div>
+                            </div>
+
+                            <div class="form-group row">
+                                <label for="" class="col-sm-3 col-form-label">Panchayat<span style="color: #FF0000;font-weight:bold"> *</span></label>
+                                <div class="col-sm-9">
+                                    <input type="text" class="form-control" name="panchayat" id="panchayat"
+                                        placeholder="Enter your Panchayat">
+                                </div>
+                            </div>
+                            
+                            {{!-- mobile --}}
+
+                            <div class="form-group row">
+                                <label for="" class="col-sm-3 col-form-label">Mobile no<span style="color: #FF0000;font-weight:bold"> *</span></label>
+                                <div class="col-sm-9">
+                                    <input type="text" class="form-control" name="mobile" id="mobile"
+                                        placeholder="Enter your Mobile no">
+                                </div>
+                            </div>
+                           
+                            {{!-- Price --}}
+
+                            <div class="form-group row">
+                                <label for="" class="col-sm-3 col-form-label">Price<span style="color: #FF0000;font-weight:bold"> *</span></label>
+                                <div class="col-sm-9">
+                                    <input type="text" class="form-control" name="price" id="animal-category"
+                                        placeholder="Rs.000">
+                                </div>
+                            </div>
+
+                            {{!-- Image --}}
+
+                            <div class="form-group row">
+                                <label for="" class="col-sm-3 col-form-label">Image<span style="color: #FF0000;font-weight:bold"> *</span> </label>
+                                <div class="col-sm-9">
+                                    <input type="file" class="form-control" name="image">
+                                </div>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary" style="float: right;">Submit</button>
+                            
+                           
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+

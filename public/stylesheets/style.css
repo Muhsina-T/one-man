@@ -266,7 +266,7 @@ h6 {font-size: .9rem; }
   display: flex;
   width: 100%;
   z-index: 100;
-  background-color: ghostwhite;
+  background-color: rgba(238, 237, 237, 0.87);
   /* overflow: hidden; */
   /* position: fixed; */
 }
@@ -281,6 +281,8 @@ h6 {font-size: .9rem; }
 
 
 }
+
+
 
 
 #header .navbar .desktop-list li {
@@ -302,8 +304,65 @@ h6 {font-size: .9rem; }
 
 
 
+
+
 #header .mobile-list {
   display: none;
+}
+
+#animal-profile .container a{
+  color: black;
+  text-transform: uppercase;
+  font-size: small;
+  background-color: rgb(197, 194, 194);
+  border: none;
+  margin-top:1.3rem;
+  margin-right:0.7rem;
+  cursor: pointer;
+  border-radius: 5rem;
+  display: flex;
+  z-index: 100;
+  position: fixed;
+  margin-top: 1.3rem;
+  
+  
+
+}
+#animals .container a{
+  color: black;
+  text-transform: uppercase;
+  font-size: small;
+  background-color: rgb(197, 194, 194);
+  border: none;
+  margin-top:1.3rem;
+  margin-right:0.7rem;
+  cursor: pointer;
+  border-radius: 5rem;
+  display: flex;
+  z-index: 100;
+  position: fixed;
+  margin-top: 1.3rem;
+  
+  
+
+}
+#home .container a{
+  color: black;
+  text-transform: uppercase;
+  font-size: small;
+  background-color: rgb(197, 194, 194);
+  border: none;
+  margin-top:1.3rem;
+  margin-right:0.7rem;
+  cursor: pointer;
+  border-radius: 5rem;
+  display: flex;
+  z-index: 100;
+  position: fixed;
+  margin-top: 2rem;
+  
+  
+
 }
 
 #header .btn-primary{
@@ -340,6 +399,8 @@ h6 {font-size: .9rem; }
     width: 100%;
     padding: 10px;
   }
+
+  
 
   #header .mobile-list i {
     cursor: pointer;
@@ -538,6 +599,7 @@ h6 {font-size: .9rem; }
 
 #add-profile .card {
   border: 0;
+ 
 }
 
 #edit-profile .card {
@@ -712,6 +774,9 @@ body {
 
 #home .card p{
   margin:0;
+  text-transform: uppercase;
+  font-weight: 500;
+
 }
 
 #profile .card{
@@ -756,6 +821,65 @@ body {
 
 #vehicle .card p{
   margin:0;
+  text-transform: uppercase;
+  font-weight: 500;
+  
+
+}
+
+#vehicles .card{
+  background-color: white;
+  border: 0;
+  
+
+}
+
+#animal-profile .card{
+  position: relative;
+  display: flex;
+  cursor: pointer;
+ 
+    width: 23rem;
+    height: 24rem;
+    
+    background-clip: border-box;
+    border-radius: 0.25rem
+}
+
+
+#animal-profile .card h5{
+  font-weight: 500;
+  
+  
+  
+}
+#animal-profile .card p{
+  margin:0
+}
+
+
+
+
+#animals .card{
+  align-items:center;
+  border-radius: 15% 0;
+  cursor: pointer;
+  box-shadow: 0 1px 3px 1px #aaa;
+  border: 0;
+  
+  
+}
+
+#animals .card img{
+  width: 100%;
+  border-radius: 15% 0 0;
+}
+
+#animals .card p{
+  margin:0;
+  text-transform: uppercase;
+  font-weight: 500;
+
 }
 
 #job .card{
@@ -821,8 +945,15 @@ body {
   font-size: 1.1rem;
 }
 
-#members p{
+#members .card p{
   text-align: center;
+  text-transform: uppercase;
+  
+}
+
+#members .card-img-top {
+  border-radius: 5%;
+  cursor: pointer;
 }
 
 /* slide photo */
@@ -907,3 +1038,193 @@ body {
 }
 
 
+.geS5n {
+ 
+  transition: background-color 200ms cubic-bezier(0,0,0.2,1);
+  background-color: #fff;
+  border: 1px solid #dadce0;
+  border-radius: 8px;
+  margin-bottom: 8px;
+
+  padding: 24px   ;
+  page-break-inside: avoid;
+  word-wrap: break-word;
+  height: 9rem;
+}
+.z12JJ {
+
+  display: flex;
+  box-pack: justify;
+  
+  justify-content: space-between;
+  margin-bottom: 33px;
+}
+
+.M4DNQ {
+  
+  box-align: start;
+
+  align-items: flex-start;
+  
+  box-sizing: border-box;
+  
+  display: flex;
+  
+  
+  flex-direction: column;
+  max-width: 100%;
+  min-width: 0%;
+  position: relative;
+}
+.HoXoMd {
+  font-family: "Google Sans",Roboto,Arial,sans-serif;
+  font-size: 16px;
+  letter-spacing: .1px;
+  line-height: 5px;
+  color: #202124;
+  font-weight: 400;
+ 
+  display: flex;
+  width: 100%;
+  word-break: break-word;
+  padding-top: 0.2rem;
+}
+div {
+  display: block;
+}
+.k3kHxc.RdH0ib {
+  width: 50%;
+}
+
+
+.rFrNMe {
+  
+  
+  display: inline-block;
+  outline: none;
+  padding-bottom: 6px;
+  width: 200px;
+}
+.col-md-8 .col-xs-12{
+  position: relative;
+    width: 100%;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    
+}
+.aCsJod {
+  height: 45px;
+  position: relative;
+  vertical-align: top;
+}
+.aXBtI {
+ 
+  display: flex;
+  position: relative;
+  top: 14px;
+}
+.Xb9hP {
+  
+  display: flex;
+ 
+  box-flex: 1;
+  
+  flex-grow: 1;
+  
+  flex-shrink: 1;
+  min-width: 0%;
+  position: relative;
+}
+.RdH0ib .zHQkBf, .RdH0ib .tL9Q4c {
+  font-family: Roboto,Arial,sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: .2px;
+  line-height: 24px;
+  color: #202124;
+}
+.whsOnd {
+  
+  box-flex: 1;
+  
+  flex-grow: 1;
+ 
+  
+  flex-shrink: 1;
+  background-color: transparent;
+  border: none;
+  display: block;
+  font: 200 14px Roboto,RobotoDraft,Helvetica,Arial,sans-serif;
+  height: 45px;
+  line-height: 24px;
+  margin: 0;
+  min-width: 0%;
+  outline: none;
+  padding: 0;
+  z-index: 0;
+}
+.i9lrp {
+  background-color: rgba(0,0,0,.12);
+  bottom:5px;
+  height: 1px;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  width: 100%;
+}
+.RdH0ib .snByac {
+    font-family: Roboto,Arial,sans-serif;
+    font-size: 16px;
+    font-weight: 500px;
+    letter-spacing: .2px;
+    line-height: 20px;
+    color: #70757a;
+    
+}
+.OabDMe {
+ 
+  transform: scaleX(0);
+  background-color: #4285f4;
+  bottom: -2px;
+  height: 2px;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  width: 100%;
+}
+
+element.style {
+}
+.k3kHxc.RdH0ib {
+    width: 100%;
+    
+}
+
+
+
+user agent stylesheet
+div {
+    display: block;
+}
+
+.lrKTG {
+    color: #202124;
+}
+.RH5hzf {
+    background-color: transparent;
+    
+    box-shadow: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    word-wrap: break-word;
+}
+body {
+   
+    margin: 0;
+}
+.d-category{
+  display: none;
+}
