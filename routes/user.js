@@ -123,9 +123,9 @@ router.get('/add-profile', (req, res) => {
 })
 
 router.post('/add-profile', (req, res) => {
-  console.log("reqqqbdyy",req.body);
+  
   userHelpers.addProfile(req.body).then((userData) =>{
-    console.log("udataa",userData);
+    
     let image = req.files.image
     let x = userData.insertedId
     userData=x.toString()
