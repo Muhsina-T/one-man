@@ -19,7 +19,7 @@
 
                 <div class="card-body">
 
-                    <form id="checkout-form"  action="/add-profile" enctype="multipart/form-data" method="post">
+                    <form action="/add-profile" enctype="multipart/form-data" method="post">
                         {{!-- Name --}}
                         <div>
                             <div class="geS5n">
@@ -582,7 +582,6 @@
  
 </script>
 <script type="text/javascript">
-var checkout-form = document.getElementById('checkout-form')
     $("#checkout-form").submit((e)=>{
         e.preventDefault()
         $.ajax({

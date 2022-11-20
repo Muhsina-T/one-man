@@ -131,10 +131,7 @@ router.post('/add-profile', (req, res) => {
     userData=x.toString()
     image.mv('./public/profile-images/'+userData+ '.jpg',(err)=>{
       if(!err){
-        userHelpers.generateRazorpay(userData).then((response) => {
-          console.log("yessss", response);
-          res.json(response)
-        })
+        res.render('user/home')
 
       }else{
         console.log(err);

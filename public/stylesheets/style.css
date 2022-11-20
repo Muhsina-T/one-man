@@ -364,6 +364,24 @@ h6 {font-size: .9rem; }
   
 
 }
+#vehicle .container a{
+  color: black;
+  text-transform: uppercase;
+  font-size: small;
+  background-color: rgb(197, 194, 194);
+  border: none;
+  margin-top:1.3rem;
+  margin-right:0.7rem;
+  cursor: pointer;
+  border-radius: 5rem;
+  display: flex;
+  z-index: 100;
+  position: fixed;
+  margin-top: 2rem;
+  
+  
+
+}
 
 #header .btn-primary{
   
